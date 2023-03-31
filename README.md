@@ -67,9 +67,10 @@ New users.yaml file ( only changed the order of the groups assigned )
 ali@mycompany.net:
   name: "ali"
   groups:
-    - aws-ec2
     - aws-vpc
     - aws-lambda
+    - aws-ec2
+
 ```
 
 
