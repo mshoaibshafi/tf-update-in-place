@@ -1,0 +1,6 @@
+ali@mycompany.net:
+  name: "ali"
+  groups:
+    - aws-ec2
+    - aws-vpc
+    - aws-lambda

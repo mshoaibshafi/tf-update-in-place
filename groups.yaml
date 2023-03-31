@@ -1,0 +1,8 @@
+"aws-ec2":
+  name: aws-ec2
+"aws-lambda":
+  name: aws-lambda
+"aws-ecs":
+  name: aws-ecs
+"aws-vpc":
+  name: aws-vpc
