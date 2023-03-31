@@ -70,7 +70,8 @@ ali@mycompany.net:
     - aws-vpc
     - aws-lambda
     - aws-ec2
-
 ```
+
+Now run `terraform plan` to see the issue
 
 
