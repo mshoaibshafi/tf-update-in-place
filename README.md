@@ -1,6 +1,6 @@
 # tf-update-in-place
 
-Terraform keep updating-in-place resources even though none of them got touched instead of their position has changed ... can someone help me fix this issue -
+Terraform keep updating-in-place resources even though none of them got touched instead of their position has changed.
 
 ```
 .... < remove some extra info > ...
@@ -45,11 +45,17 @@ Plan: 0 to add, 3 to change, 0 to destroy.
 
 ```
 
-Here is the detail and tasks required :
+Tasks required :
 1. Create AWS IAM users and AWS IAM Groups
 2. Assign users to groups as per their role 
 
 Issue : `when the order of the groups changed, Terraform detect it unnecessarily and try to update the state file`
 
-Below is a “one-file.tf” below is the two YAML files to for users.yaml & groups.yamlucopx
+Three files in this GIT to test and reproduce this issue :
+
+1. users.yaml 
+2. groups.yaml
+3. main.tf
+
+
 
