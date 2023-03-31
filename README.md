@@ -44,3 +44,12 @@ Terraform will perform the following actions:
 Plan: 0 to add, 3 to change, 0 to destroy.
 
 ```
+
+Here is the detail and tasks required :
+1. Create AWS IAM users and AWS IAM Groups
+2. Assign users to groups as per their role 
+
+Issue : `when the order of the groups changed, Terraform detect it unnecessarily and try to update the state file`
+
+Below is a “one-file.tf” below is the two YAML files to for users.yaml & groups.yamlucopx
+
