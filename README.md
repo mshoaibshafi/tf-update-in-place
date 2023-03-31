@@ -57,5 +57,19 @@ Three files in this GIT to test and reproduce this issue :
 2. groups.yaml
 3. main.tf
 
+Now make a change to `users.yaml` and produce an issue
+
+New users.yaml file ( only changed the order of the groups assigned )
+
+=== modified users.yaml ===
+
+```
+ali@mycompany.net:
+  name: "ali"
+  groups:
+    - aws-ec2
+    - aws-vpc
+    - aws-lambda
+```
 
 
