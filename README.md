@@ -57,9 +57,7 @@ Three files in this GIT to test and reproduce this issue :
 2. groups.yaml
 3. main.tf
 
-Now make a change to `users.yaml` and produce an issue
-
-New users.yaml file ( only changed the order of the groups assigned )
+Now make a change in the order of the groups assigned to user "ali" in `users.yaml`.
 
 === modified users.yaml ===
 
