@@ -1,6 +1,16 @@
 ali@mycompany.net:
   name: "ali"
-  groups:
+  groups_aws:
     - aws-ec2
     - aws-vpc
     - aws-lambda
+john@mycompany.net:
+  name: "john"
+  groups_aws:
+    - aws-lambda
+    - aws-ec2
+    - aws-ecs
+bob@mycompany.net:
+  name: "bob"
+  groups_aws:
+  

@@ -19,12 +19,12 @@ resource "aws_iam_group" "groups" {
 locals {
   groupAssignments = flatten([
     for key, attributes in local.users : [
-      for g in attributes.groups : {
+      for g in attributes.groups_aws : {
         name  = attributes.name
         group = g
         email = key
       }
-    ]
+    ] if attributes.groups_aws != null
   ])
 }
 
@@ -41,7 +41,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.59.0"
+      version = "4.61.0"
     }
   }
 }
